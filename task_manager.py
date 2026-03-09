@@ -33,7 +33,7 @@ def deleteTask(taskId):
             return
     print("No such task")
 
-def addToFile(filename = "tasks.txt"):
+def addToFile(filename = "./tasks.txt"):
     with open(filename, "w") as f:
         for task in tasks:
             f.write(f"{task.id}|{task.title}|{task.description}|{task.status}\n")
@@ -94,5 +94,7 @@ while True:
 
     else:
         print("Invalid option.")
+
+# I writed it with my note6 and it added by Git
     
 
